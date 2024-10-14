@@ -4,6 +4,7 @@ metadata:
   name: volume
   namespace: applications
 spec:
+  storageClassName: local-path
   capacity:
     storage: 5Gi
   volumeMode: Filesystem
