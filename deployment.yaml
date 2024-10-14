@@ -28,6 +28,12 @@ spec:
             timeoutSeconds: 10
           name: vscode-server
           env:
+            - name: PUID
+              value: 1000
+            - name: PGID
+              value: 1000
+            - name: TZ
+              value: "Etc/UTC"
             - name: SUDO_PASSWORD
               value: "password"
             - name: DOCKER_MODS
