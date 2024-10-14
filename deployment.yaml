@@ -29,7 +29,7 @@ spec:
           name: vscode-server
           env:
             - name: DOCKER_MODS
-              value: "linuxserver/mods:code-server-extension-arguments|ghcr.io/ivanmorenoj/lsio-mods:code-server-ws"
+              value: "linuxserver/mods:code-server-extension-arguments|linuxserver/mods:code-server-zsh"
           ports:
             - containerPort: 8443
               name: http
