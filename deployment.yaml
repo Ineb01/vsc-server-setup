@@ -18,7 +18,7 @@ spec:
         app.kubernetes.io/name: code-server
     spec:
       containers:
-        - image: ghcr.io/linuxserver/code-server:version-v3.11.1
+        - image: docker.io/linuxserver/code-server:v4.0.2-ls111
           imagePullPolicy: IfNotPresent
           livenessProbe:
             failureThreshold: 5
@@ -27,6 +27,9 @@ spec:
               port: http
             timeoutSeconds: 10
           name: vscode-server
+          env:
+            - name: DOCKER_MODS
+              value: "linuxserver/mods:code-server-extension-arguments|ghcr.io/ivanmorenoj/lsio-mods:code-server-ws"
           ports:
             - containerPort: 8443
               name: http
