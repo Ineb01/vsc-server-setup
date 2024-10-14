@@ -29,7 +29,11 @@ spec:
           name: vscode-server
           env:
             - name: DOCKER_MODS
-              value: "linuxserver/mods:code-server-extension-arguments|linuxserver/mods:code-server-zsh|linuxserver/mods:code-server-scikit-learn"
+              value: "linuxserver/mods:code-server-extension-arguments|linuxserver/mods:universal-package-install|linuxserver/mods:code-server-zsh|linuxserver/mods:code-server-scikit-learn"
+            - name: INSTALL_PACKAGES
+              value: "rsync|git|nginx"
+            - name: INSTALL_PIP_PACKAGES
+              value: "requests|numpy|conda"
           ports:
             - containerPort: 8443
               name: http
