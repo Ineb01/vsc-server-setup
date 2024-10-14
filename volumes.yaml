@@ -19,6 +19,7 @@ metadata:
   name: vscode-server-pvc
   namespace: applications
 spec:
+  storageClassName: local-path
   accessModes:
     - ReadWriteOnce
   resources:
