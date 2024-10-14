@@ -35,7 +35,7 @@ spec:
             - name: VSCODE_EXTENSION_IDS
               value: "vscode-icons-team.vscode-icons|ms-azuretools.vscode-docker"
             - name: INSTALL_PACKAGES
-              value: "git|iputils"
+              value: "git|iputils-ping"
             - name: INSTALL_PIP_PACKAGES
               value: "requests|numpy|conda"
           ports:
