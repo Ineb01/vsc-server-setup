@@ -57,7 +57,7 @@ spec:
           volumeMounts:
             - name: workspace-volume
               mountPath: "/config/workspace"
-        volume:
+        volumes:
           - name: workspace-volume
             persistentVolumeClaim:
               claimName: vscode-server-pvc
