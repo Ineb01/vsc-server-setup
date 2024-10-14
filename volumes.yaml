@@ -19,6 +19,8 @@ metadata:
   name: vscode-server-pvc
   namespace: applications
 spec:
+  accessModes:
+    - ReadWriteOnce
   resources:
     requests:
       storage: 5Gi
