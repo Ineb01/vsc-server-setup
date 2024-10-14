@@ -20,8 +20,10 @@ metadata:
   namespace: applications
 spec:
   storageClassName: local-path
+  volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
       storage: 5Gi
+  
