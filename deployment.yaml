@@ -49,8 +49,8 @@ spec:
               name: http
               protocol: TCP
           readinessProbe:
-            failureThreshold: 5
-            initialDelaySeconds: 30
+            failureThreshold: 10
+            initialDelaySeconds: 60
             tcpSocket:
               port: http
             timeoutSeconds: 10
