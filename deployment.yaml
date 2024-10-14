@@ -57,9 +57,9 @@ spec:
           volumeMounts:
             - name: workspace-volume
               mountPath: "/config/workspace"
-        volumes:
-          - name: workspace-volume
-            persistentVolumeClaim:
-              claimName: vscode-server-pvc
+      volumes:
+        - name: workspace-volume
+          persistentVolumeClaim:
+            claimName: vscode-server-pvc
       dnsPolicy: ClusterFirst
       serviceAccountName: default
