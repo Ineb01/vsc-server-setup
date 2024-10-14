@@ -54,6 +54,12 @@ spec:
             tcpSocket:
               port: http
             timeoutSeconds: 10
-          volumeMounts: null
+          volumeMounts: /config/workspace
+            - name: workspace-volume
+              mountPath: "/config/workspace"
+        volume:
+          - name: workspace-volume
+            persistentVolumeClaim:
+              claimName: vscode-server-pvc
       dnsPolicy: ClusterFirst
       serviceAccountName: default
