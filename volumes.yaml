@@ -21,6 +21,7 @@ metadata:
 spec:
   storageClassName: local-path
   volumeMode: Filesystem
+  volumeName: volume
   accessModes:
     - ReadWriteOnce
   resources:
