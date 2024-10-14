@@ -54,7 +54,7 @@ spec:
             tcpSocket:
               port: http
             timeoutSeconds: 10
-          volumeMounts: /config/workspace
+          volumeMounts:
             - name: workspace-volume
               mountPath: "/config/workspace"
         volume:
