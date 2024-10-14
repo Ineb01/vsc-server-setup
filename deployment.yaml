@@ -37,7 +37,7 @@ spec:
             - name: SUDO_PASSWORD
               value: "password"
             - name: DOCKER_MODS
-              value: "linuxserver/mods:universal-package-install|linuxserver/mods:code-server-zsh|linuxserver/mods:universal-docker-in-docker|linuxserver/mods:code-server-extension-arguments"
+              value: "linuxserver/mods:universal-package-install|linuxserver/mods:code-server-zsh|linuxserver/mods:code-server-extension-arguments"
             - name: VSCODE_EXTENSION_IDS
               value: "vscode-icons-team.vscode-icons|ms-toolsai.jupyter"
             - name: INSTALL_PACKAGES
