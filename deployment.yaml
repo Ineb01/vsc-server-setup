@@ -41,9 +41,9 @@ spec:
             - name: VSCODE_EXTENSION_IDS
               value: "vscode-icons-team.vscode-icons|ms-azuretools.vscode-docker|ms-toolsai.jupyter"
             - name: INSTALL_PACKAGES
-              value: "git|iputils-ping"
+              value: "git|iputils-ping|python3-ipykernel|python3-numpy|python3-venv"
             - name: INSTALL_PIP_PACKAGES
-              value: "requests|numpy|conda|ipykernel"
+              value: "" # not working
           ports:
             - containerPort: 8443
               name: http
