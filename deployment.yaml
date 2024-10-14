@@ -39,7 +39,7 @@ spec:
             - name: DOCKER_MODS
               value: "linuxserver/mods:universal-package-install|linuxserver/mods:code-server-zsh|linuxserver/mods:universal-docker-in-docker|linuxserver/mods:code-server-extension-arguments"
             - name: VSCODE_EXTENSION_IDS
-              value: "vscode-icons-team.vscode-icons|ms-azuretools.vscode-docker|ms-toolsai.jupyter"
+              value: "vscode-icons-team.vscode-icons|ms-toolsai.jupyter"
             - name: INSTALL_PACKAGES
               value: "git|iputils-ping|python3-ipykernel|python3-numpy|python3-venv|python3-matplotlib"
             - name: INSTALL_PIP_PACKAGES
@@ -55,7 +55,5 @@ spec:
               port: http
             timeoutSeconds: 10
           volumeMounts: null
-          securityContext:
-            allowPrivilegeEscalation: true
       dnsPolicy: ClusterFirst
       serviceAccountName: default
