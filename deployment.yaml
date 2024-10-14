@@ -48,12 +48,6 @@ spec:
             - containerPort: 8443
               name: http
               protocol: TCP
-          readinessProbe:
-            failureThreshold: 10
-            initialDelaySeconds: 60
-            tcpSocket:
-              port: http
-            timeoutSeconds: 10
           volumeMounts:
             - name: workspace-volume
               mountPath: "/config/workspace"
