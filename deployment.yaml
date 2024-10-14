@@ -33,7 +33,7 @@ spec:
             - name: DOCKER_MODS
               value: "linuxserver/mods:universal-package-install|linuxserver/mods:code-server-zsh|linuxserver/mods:universal-docker-in-docker|linuxserver/mods:code-server-extension-arguments"
             - name: VSCODE_EXTENSION_IDS
-              value: "vscode-icons-team.vscode-icons|ms-azuretools.vscode-docker"
+              value: "vscode-icons-team.vscode-icons|ms-azuretools.vscode-docker|ms-toolsai.jupyter"
             - name: INSTALL_PACKAGES
               value: "git|iputils-ping"
             - name: INSTALL_PIP_PACKAGES
