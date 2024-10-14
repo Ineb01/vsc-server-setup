@@ -43,7 +43,7 @@ spec:
             - name: INSTALL_PACKAGES
               value: "git|iputils-ping"
             - name: INSTALL_PIP_PACKAGES
-              value: "requests|numpy|conda"
+              value: "requests|numpy|conda|ipykernel"
           ports:
             - containerPort: 8443
               name: http
