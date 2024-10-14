@@ -55,5 +55,9 @@ spec:
               port: http
             timeoutSeconds: 10
           volumeMounts: null
+          securityContext:
+            runAsUser: 1000
+            runAsGroup: 1000
+            allowPrivilegeEscalation: true
       dnsPolicy: ClusterFirst
       serviceAccountName: default
