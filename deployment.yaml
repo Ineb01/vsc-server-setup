@@ -41,7 +41,7 @@ spec:
             - name: VSCODE_EXTENSION_IDS
               value: "vscode-icons-team.vscode-icons|ms-toolsai.jupyter"
             - name: INSTALL_PACKAGES
-              value: "git|iputils-ping|python3-ipykernel|python3-numpy|python3-venv|python3-matplotlib"
+              value: "git|iputils-ping|python3-ipykernel|python3-numpy|python3-venv|python3-matplotlib|python3-networkx"
             - name: INSTALL_PIP_PACKAGES
               value: "" # not working
           ports:
