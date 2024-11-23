@@ -18,7 +18,7 @@ spec:
         app.kubernetes.io/name: code-server
     spec:
       containers:
-        - image: docker.io/linuxserver/code-server:4.93.1
+        - image: docker.io/linuxserver/code-server:4.95.3
           imagePullPolicy: IfNotPresent
           livenessProbe:
             failureThreshold: 5
@@ -39,9 +39,9 @@ spec:
             - name: DOCKER_MODS
               value: "linuxserver/mods:universal-package-install|linuxserver/mods:code-server-zsh|linuxserver/mods:code-server-extension-arguments"
             - name: VSCODE_EXTENSION_IDS
-              value: "vscode-icons-team.vscode-icons|ms-toolsai.jupyter"
+              value: "vscode-icons-team.vscode-icons|ms-toolsai.jupyter|GitHub.copilot|ms-python.python"
             - name: INSTALL_PACKAGES
-              value: "git|iputils-ping|python3-ipykernel|python3-numpy|python3-venv|python3-matplotlib|python3-networkx"
+              value: "git|iputils-ping|python3-ipykernel|python3-numpy|python3-venv|python3-matplotlib|python3-networkx|python3-opencv"
             - name: INSTALL_PIP_PACKAGES
               value: "" # not working
           ports:
